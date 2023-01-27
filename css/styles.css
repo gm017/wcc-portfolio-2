@@ -1,0 +1,48 @@
+.project-both {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px ridge gold;
+    padding: 15px;
+    /* max-width: fit-content; */
+    /* background-color: aquamarine; */
+    background-color: rgb(255, 223, 181);
+    max-width: 340px;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+a {
+    color: rgb(35, 192, 145);
+    text-decoration: none;
+}
+
+.project-name {
+    padding-top: 14px;
+    letter-spacing: 15px;
+}
+
+.info-container {
+    padding-top: 13px;
+}
+
+.info {
+    max-width: 39px;
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        width: 70px;
+        height: auto;
+    }
+
+    .project-name {
+        letter-spacing: 10px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+}
