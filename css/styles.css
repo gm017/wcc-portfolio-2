@@ -10,6 +10,7 @@
     max-width: 340px;
 }
 
+
 html {
     background-color: antiquewhite;
 }
@@ -17,6 +18,14 @@ html {
 a {
     color: rgb(35, 192, 145);
     text-decoration: none;
+}
+
+
+h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+    text-decoration: overline underline #a18eff wavy 5px;
 }
 
 .project-name {
@@ -44,5 +53,18 @@ a {
 
     h1 {
         font-size: 21px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    h1 {
+        letter-spacing: -5px;
     }
 }
