@@ -41,6 +41,10 @@ h1 {
     max-width: 39px;
 }
 
+.term-2 {
+    margin-top: 15px;
+}
+
 @media only screen and (max-width: 800px) {
     img {
         width: 70px;
