@@ -11,6 +11,7 @@
 }
 
 
+
 html {
     background-color: antiquewhite;
 }
@@ -20,12 +21,17 @@ a {
     text-decoration: none;
 }
 
+.projects-container {
+    border: 1px red solid;
+    max-width: fit-content;
+}
 
 h1 {
     padding-top: 15px;
     padding-bottom: 15px;
     font-style: italic;
     text-decoration: overline underline #a18eff wavy 5px;
+    text-align: center;
 }
 
 .project-name {
@@ -43,6 +49,11 @@ h1 {
 
 .term-2 {
     margin-top: 15px;
+}
+
+.project-thumbnail {
+    width: 100px;
+    height: 100px;
 }
 
 @media only screen and (max-width: 800px) {
