@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     background-color: rgb(255, 223, 181);
     border: 5px ridge gold;
-    text-decoration: overline underline #a18eff wavy 5px;
+
 }
 
 .statement {
@@ -83,6 +83,10 @@ h1 {
         height: auto;
     }
 
+    .projects-textbox {
+        display: none;
+    }
+
     .project-name {
         letter-spacing: 10px;
     }
@@ -118,6 +122,7 @@ h1 {
         letter-spacing: -5px;
         position: fixed;
         padding-right: 7px;
+        text-decoration: overline underline #a18eff wavy 5px;
 
     }
 
