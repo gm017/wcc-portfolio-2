@@ -180,7 +180,7 @@ h1 {
 }
 
 body {
-    background-image: url('/assets/images/shield.jpeg');
+    background-image: url('assets/images/shield.jpeg');
     background-attachment: fixed;
 }
 
