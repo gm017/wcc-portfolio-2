@@ -12,7 +12,207 @@
 </head>
 
 <body>
-    test
+    <h1 style="left: 900px">FOG BANK DOCUMENTATION</h1>
+
+    <div class="fog-container">
+
+        <div style="text-align: center;" class="fog-doc">
+
+            <iframe src="https://player.vimeo.com/video/821625584?h=f921cbc056" width="640" height="360" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p class="fog-doc">
+            This project is a virtual instrument designed for improvised performance. My main goal was to create
+            an
+            instrument for my own use in live performances and recordings. I wanted to create an instrument that
+            looked
+            like
+            it belonged on the web in some respect, with visual cues taken from crude 3D animation and
+            videogames.
+
+            <br><br>
+
+            Two sonic inspirations which served as a starting point for designing the instrument were a
+            recording of
+            Albert
+            Ayler playing Holy Ghost live and the Boredoms album Super Ae. The idea for controlling tones with
+            the
+            voice
+            whilst other tones drone around one another was inspired by the brutality of the saxophone interplay
+            on
+            the
+            Albert Ayler recording. I wanted to loosely emulate that sense of harsh conflict/collaboration in a
+            noisy
+            electronic context.Using my voice to control the synths, hopefully the shakiness of the output draws
+            a
+            connection between the two. The Boredoms record combines elements of noise music and psychedelia in
+            a
+            way
+            that
+            softens out the hard edges - I used quite a corny delay effect in my instrument as a nod towards
+            this.
+            <br><br>
+            I didn’t want the instrument to have any references to music or to have any real visual similarities
+            to
+            music
+            software. I aimed to make something toylike that felt like it could be used without having musical
+            experience.
+            In order to do this I created semi-abstract indicators of functionality. The delay effect is shown
+            by
+            lines
+            connecting one globe. The distortion is shown by lines connecting another. Cycling through presets
+            is
+            indicated
+            by a moving yellow square. The individual tones are represented by the floating cubes at the top.
+
+            <br><br>
+            <img src="/assets/images/docpic1.png"> <br> Cubes representing the six oscillators. The cubes with the
+            fire
+            texture on the green background are in ‘live’ mode <br><br>
+
+            Another influence for the visual design came from educational games I played as a child, like the
+            Magic
+            School
+            Bus series and Mavis Beacon Teaches Typing. Although there’s no visual similarity between these
+            pieces
+            of
+            software and mine, I felt deeply inspired by their bizarre user interfaces. There’s something very
+            special
+            about
+            the haphazard design of them, with mismatched and often unintuitive interfaces. For me there is
+            something
+            haunting about software which exists outside of contemporary homogenised and universal design
+            languages.
+            Playing
+            these games, I felt like there were near endless layers of unknowns that lived within the software,
+            due
+            it
+            not
+            clearly communicating exactly all it contained. This could obviously be due to the fact that I was a
+            young
+            child
+            and didn’t have a good grasp of what was going on, but the emotional response I had has stuck
+            around.
+            I’m
+            aware
+            of potential accessibility issues that can spring out of designing things in this way, but I think
+            my
+            software
+            is simple enough that this isn’t much of an issue, as well as the fact that it’s primarily a tool
+            for
+            myself
+            so
+            I wasn’t as concerned with this as if I was making something with other people in mind. I think
+            there’s
+            something fun about experimenting with a tool which doesn’t completely communicate what it does.
+            <br><br>
+
+            <img src="/assets/images/docpic2.png"> <br> The UI design in Mavis Beacon Teaches Typing <br><br>
+
+
+            Another influence taken from videogames is the way the user controls the distortion levels. The user
+            has
+            to
+            time
+            a button press at the correct moment in order to switch the distortion back to its default “light”
+            mode.
+            This
+            idea came from playing Sekiro: Shadows Die Twice which has a timing-based parry system used to
+            deflect
+            sword
+            hits. This causes the flow of combat in the game to have a rhythmic, musical feel - though not
+            constrained
+            to a
+            beat. In the way that this mechanic makes gameplay musical, I wanted to reverse this and gamify an
+            instrument.
+            It also has the added effect of imposing a creative limitation on the user, as there needs to be an
+            element
+            of
+            thinking ahead when turning up the distortion, as the timing of when you turn it on will leave you
+            with
+            shorter
+            or longer durations before you have the chance to turn it off again.
+
+            <br><br>
+            <img src="/assets/images/docpic3.png"> <br>
+            Timing a parry in Sekiro: Shadows Die Twice <br><br>
+
+            In terms of the technical implementation, the first goal was to find a way to get the pitch of the
+            user’s
+            voice
+            from the microphone and store it in a variable so that the frequencies of the oscillators could be
+            controlled by
+            this. I felt that this was one element I wouldn’t be able to make myself from scratch, so I found an
+            implementation of this on Github built in Javascript that I used the code from. The link to this is
+            included
+            in
+            the references. The sound generation is done using the Tone.js library.
+            <br><br>
+            Going on to build the rest of the instrument, my main personal goal was to improve my
+            object-oriented
+            programming skills. All the visual elements on the screen are objects generated from classes. This
+            helped to
+            reduce repeated code, as I could create multiple elements of the same type (such as the cubes at the
+            top
+            representing the different oscillators) and easily manage their default values and states
+            separately.
+            <br><br>
+
+            <img src="/assets/images/docpic4.png"> <br>
+            Functionality controlling the timing-based distortion control
+            <br><br>
+            I’m pleased with the outcome of the project; I think it’s a fun tool to improvise with and can
+            create a
+            fairly
+            diverse array of sounds from simple parts. My decision to focus on practicing my object-oriented
+            programming
+            skills helped me to become more comfortable with these techniques, as well as forcing me to think
+            explicitly
+            about the structure of the code. This was useful for me as I tend to build things quite frantically
+            and
+            improvisationally, so it helped to keep me in check. This focus on the structure of the software
+            resulted in
+            the
+            row-based “modular” design. This made it easy to build the next feature as the project went on, and
+            kept
+            all
+            the
+            code for the different features separate. I plan to develop the project further, as I will be using
+            it
+            to do
+            some live performances in the coming months. This modular structure will hopefully allow me to
+            easily
+            add
+            more
+            features (potentially different effects, or building a way to control filters with the pitch of the
+            voice),
+            so I
+            will develop the instrument further after seeing how it feels to perform with the current version.
+
+        </p>
+
+        <p class="fog-doc">
+            References:
+            <br><br>
+            Albert Ayler - Holy Ghost (https://www.youtube.com/watch?v=nuCxMd8SfNE)
+            <br><br>
+            Boredoms - Super You (https://www.youtube.com/watch?v=Z77nkj4DrhY)
+            <br><br>
+            Boredoms - Super Are (https://www.youtube.com/watch?v=vC2vqPHUw7s) - 8:03
+            <br><br>
+            The Magic School Bus Explores The Solar System
+            (https://www.youtube.com/watch?v=iQyyuOgLwbU)
+            <br><br>
+            Mavis Beacon Teaches Typing (https://www.youtube.com/watch?v=QiKrkddtTAU)
+            <br><br>
+            PitchDetect - Chris Wilson (https://github.com/cwilso/PitchDetect)
+            <br><br>
+            Tone.js (https://tonejs.github.io/)
+
+        </p>
+
+    </div>
 </body>
 
 </html>
